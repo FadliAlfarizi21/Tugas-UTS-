@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captain Miller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+         <div class="toggle"><a href="../../index.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <br><br><br>
+
+            <h2><span>Captain Miller</span></h2>
+            <p>
+               Captain Miller adalah sebuah film yang mengisahkan perjalanan seorang pemimpin yang dihadapkan pada dilema moral, tanggung jawab, dan pengorbanan di tengah situasi yang penuh konflik. Dengan latar belakang yang menggambarkan perjuangan dan ketegangan, film ini berhasil menyampaikan cerita yang tidak hanya menghibur, tetapi juga menggugah emosi dan pemikiran penonton.
+               Dibuat dengan produksi sinematik yang berkualitas tinggi, Captain Miller menonjolkan kekuatan narasi yang kuat, didukung oleh akting mendalam dari para pemeran utamanya. Film ini tidak hanya menawarkan adegan aksi yang memukau, tetapi juga mengupas sisi humanis dan kompleksitas karakter utama, Captain Miller, yang menjadi inti dari cerita.
+            </p>
+            <a href="#" class="play" onclick="toggle()"><img src="play.png" alt="watch now">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="captain miller.mp4" controls="true"></video>
+        <img src="close.png" alt="close"  onclick="toggle()" class="close">
+    </div>
+
+    <script>
+        function toggle() {
+        var trailer = document.querySelector('.trailer');
+        let video = document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+
+</body>
+</html>

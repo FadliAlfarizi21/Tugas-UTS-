@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dune part Two</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+         <div class="toggle"><a href="../../index.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Dune Part Two</span></h2>
+            <p>
+               Dune: Part Two melanjutkan epik fiksi ilmiah karya Frank Herbert yang membawa penonton kembali ke dunia padang pasir planet Arrakis. Setelah peristiwa di bagian pertama, Paul Atreides (diperankan oleh Timothée Chalamet) menghadapi takdirnya sebagai pemimpin kaum Fremen dan pembawa perubahan besar di galaksi. Dalam perjuangannya, Paul harus menghadapi intrik politik yang semakin dalam, ancaman dari kekaisaran, dan dilema moral yang menguji keyakinannya.
+            </p>
+            <a href="#" class="play" onclick="toggle()"><img src="play.png" alt="watch now">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="dune part two.mp4" controls="true"></video>
+        <img src="close.png" alt="close"  onclick="toggle()" class="close">
+    </div>
+
+    <script>
+        function toggle() {
+        var trailer = document.querySelector('.trailer');
+        let video = document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+
+</body>
+</html>
+

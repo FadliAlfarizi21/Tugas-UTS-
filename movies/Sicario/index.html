@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sicario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+         <div class="toggle"><a href="../../index.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Sicario</span></h2>
+            <p>
+               Sicario, yang dirilis pada tahun 2015, adalah sebuah film thriller kriminal intens yang disutradarai oleh Denis Villeneuve. Film ini menggambarkan ketegangan dunia perang melawan kartel narkoba di perbatasan Amerika Serikat dan Meksiko. Dengan skenario yang ditulis oleh Taylor Sheridan, Sicario membawa penonton ke dalam dilema moral dan kekacauan yang menyelimuti operasi penegakan hukum di wilayah ini.
+            </p>
+            <a href="#" class="play" onclick="toggle()"><img src="play.png" alt="watch now">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="video.mp4" controls="true"></video>
+        <img src="close.png" alt="close"  onclick="toggle()" class="close">
+    </div>
+
+    <script>
+        function toggle() {
+        var trailer = document.querySelector('.trailer');
+        let video = document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atomic Blonde</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+         <div class="toggle"><a href="../../index.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Atomic Blonde</span></h2>
+            <p>
+               Atomic Blonde adalah sebuah film aksi mata-mata yang dirilis pada tahun 2017, disutradarai oleh David Leitch. Film ini diadaptasi dari novel grafis berjudul The Coldest City karya Antony Johnston dan Sam Hart. 
+               Berlatar di Berlin menjelang runtuhnya Tembok Berlin pada tahun 1989, Atomic Blonde menghadirkan kisah penuh intrik dan aksi yang memukau, dibalut dengan atmosfer Perang Dingin yang menegangkan.
+            </p>
+            <a href="#" class="play" onclick="toggle()"><img src="play.png" alt="watch now">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="Atomic Blonde.mp4" controls="true"></video>
+        <img src="close.png" alt="close"  onclick="toggle()" class="close">
+    </div>
+
+    <script>
+        function toggle() {
+        var trailer = document.querySelector('.trailer');
+        let video = document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+
+</body>
+</html>
+

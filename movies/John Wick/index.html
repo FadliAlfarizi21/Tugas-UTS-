@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Wick</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+         <div class="toggle" style="color: black;"><a href="../../index.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>John Wick</span></h2>
+            <p>
+              John Wick adalah mantan pembunuh bayaran legendaris yang telah meninggalkan dunia kejahatan untuk hidup damai bersama istrinya, Helen. Namun, hidupnya berubah drastis setelah kematian istrinya akibat penyakit. Dalam kesedihannya, Helen meninggalkan seekor anak anjing bernama Daisy sebagai tanda cinta terakhirnya. Ketika sekelompok penjahat merampok rumah John, mencuri mobilnya, dan secara brutal membunuh Daisy, John tersulut kembali ke dunia yang telah ia tinggalkan.
+            </p>
+            <a href="#" class="play" onclick="toggle()"><img src="play.png" alt="watch now">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="John Wick.mp4" controls="true"></video>
+        <img src="close.png" alt="close"  onclick="toggle()" class="close">
+    </div>
+
+    <script>
+        function toggle() {
+        var trailer = document.querySelector('.trailer');
+        let video = document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+
+</body>
+</html>

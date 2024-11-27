@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ministry of Ungentlemanly Warfare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+         <div class="toggle"><a href="../../index.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>The Ministry of Ungentlemanly Warfare</span></h2>
+            <p>
+               "The Ministry of Ungentlemanly Warfare" adalah sebuah film yang terinspirasi oleh kisah nyata tentang sebuah unit khusus yang dibentuk oleh pemerintah Inggris selama Perang Dunia II. Unit ini dikenal dengan nama "Ministry of Ungentlemanly Warfare," yang memiliki misi untuk melakukan operasi-operasi rahasia yang tidak konvensional, sering kali dengan cara yang tak terduga dan penuh risiko. 
+            </p>
+            <a href="#" class="play" onclick="toggle()"><img src="play.png" alt="watch now">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="video.mp4" controls="true"></video>
+        <img src="close.png" alt="close"  onclick="toggle()" class="close">
+    </div>
+
+    <script>
+        function toggle() {
+        var trailer = document.querySelector('.trailer');
+        let video = document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+
+</body>
+</html>

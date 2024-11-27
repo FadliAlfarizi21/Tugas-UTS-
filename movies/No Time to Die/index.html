@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No time to Die</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+         <div class="toggle"><a href="../../index.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>No Time to Die</span></h2>
+            <p>
+               No Time to Die adalah film ke-25 dalam waralaba James Bond yang melanjutkan perjalanan sang agen rahasia legendaris, 007. Disutradarai oleh Cary Joji Fukunaga, film ini menjadi momen penting karena menandai penampilan terakhir Daniel Craig sebagai James Bond. Cerita dimulai dengan Bond yang telah pensiun dari pekerjaannya sebagai agen MI6 dan mencoba menjalani kehidupan damai di Jamaika. Namun, kedamaian itu tidak berlangsung lama ketika teman lamanya dari CIA, Felix Leiter, meminta bantuannya untuk menjalankan misi penyelamatan seorang ilmuwan yang diculik.
+            </p>
+            <a href="#" class="play" onclick="toggle()"><img src="play.png" alt="watch now">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="video.mp4" controls="true"></video>
+        <img src="close.png" alt="close"  onclick="toggle()" class="close">
+    </div>
+
+    <script>
+        function toggle() {
+        var trailer = document.querySelector('.trailer');
+        let video = document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+
+</body>
+</html>

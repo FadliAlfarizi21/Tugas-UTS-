@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godzilla Vs Kong</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+         <div class="toggle"><a href="../../index.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Godzilla Vs Kong</span></h2>
+            <p>
+               Film Godzilla vs. Kong merupakan bagian dari MonsterVerse, sebuah waralaba yang menggabungkan cerita dari dua makhluk legendaris: Godzilla, raja monster, dan Kong, raja pulau tengkorak. Dalam film ini, dua ikon raksasa tersebut dipertemukan dalam sebuah pertarungan epik yang dipicu oleh konflik kekuatan yang lebih besar di balik layar. Berlatar di dunia di mana manusia berusaha memahami dan mengendalikan makhluk raksasa yang dikenal sebagai Titans, film ini mengisahkan perjuangan antara manusia dan monster, serta misteri yang menghubungkan keduanya.
+            </p>
+            <a href="#" class="play" onclick="toggle()"><img src="play.png" alt="watch now">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="godzilla vs kong.mp4" controls="true"></video>
+        <img src="close.png" alt="close"  onclick="toggle()" class="close">
+    </div>
+
+    <script>
+        function toggle() {
+        var trailer = document.querySelector('.trailer');
+        let video = document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Impossible</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+         <div class="toggle"><a href="../../index.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Mission Impossible</span></h2>
+            <p>
+               Film Mission: Impossible merupakan salah satu waralaba film aksi-spionase paling ikonik dalam sejarah perfilman. Dimulai pada tahun 1996, film ini diadaptasi dari serial televisi klasik dengan nama yang sama. Dibintangi oleh Tom Cruise sebagai Ethan Hunt, seorang agen rahasia dari Impossible Mission Force (IMF), film ini menggabungkan elemen aksi mendebarkan, intrik spionase, dan teknologi canggih yang selalu memikat penonton
+            </p>
+            <a href="#" class="play" onclick="toggle()"><img src="play.png" alt="watch now">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="video.mp4" controls="true"></video>
+        <img src="close.png" alt="close"  onclick="toggle()" class="close">
+    </div>
+
+    <script>
+        function toggle() {
+        var trailer = document.querySelector('.trailer');
+        let video = document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+
+</body>
+</html>
